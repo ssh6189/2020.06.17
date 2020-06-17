@@ -1,0 +1,806 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>504</width>
+    <height>536</height>
+   </rect>
+  </property>
+  <property name="sizePolicy">
+   <sizepolicy hsizetype="MinimumExpanding" vsizetype="MinimumExpanding">
+    <horstretch>0</horstretch>
+    <verstretch>0</verstretch>
+   </sizepolicy>
+  </property>
+  <property name="windowTitle">
+   <string>HAI-Image</string>
+  </property>
+  <property name="windowIcon">
+   <iconset resource="viewer.qrc">
+    <normaloff>:/icons/source/1.jpg</normaloff>:/icons/source/1.jpg</iconset>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <property name="sizePolicy">
+    <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+     <horstretch>0</horstretch>
+     <verstretch>0</verstretch>
+    </sizepolicy>
+   </property>
+   <layout class="QGridLayout" name="gridLayout">
+    <item row="1" column="0">
+     <widget class="QLabel" name="label_4">
+      <property name="text">
+       <string>sagittal</string>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignCenter</set>
+      </property>
+     </widget>
+    </item>
+    <item row="0" column="0">
+     <widget class="QLabel" name="label_1">
+      <property name="sizePolicy">
+       <sizepolicy hsizetype="Minimum" vsizetype="Minimum">
+        <horstretch>0</horstretch>
+        <verstretch>0</verstretch>
+       </sizepolicy>
+      </property>
+      <property name="minimumSize">
+       <size>
+        <width>240</width>
+        <height>155</height>
+       </size>
+      </property>
+      <property name="maximumSize">
+       <size>
+        <width>240</width>
+        <height>155</height>
+       </size>
+      </property>
+      <property name="frameShape">
+       <enum>QFrame::Box</enum>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignCenter</set>
+      </property>
+     </widget>
+    </item>
+    <item row="6" column="0">
+     <widget class="QLabel" name="label_6">
+      <property name="text">
+       <string>axial</string>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignCenter</set>
+      </property>
+     </widget>
+    </item>
+    <item row="1" column="1">
+     <widget class="QLabel" name="label_5">
+      <property name="text">
+       <string>coronal</string>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignCenter</set>
+      </property>
+     </widget>
+    </item>
+    <item row="0" column="1">
+     <widget class="QLabel" name="label_2">
+      <property name="minimumSize">
+       <size>
+        <width>240</width>
+        <height>155</height>
+       </size>
+      </property>
+      <property name="maximumSize">
+       <size>
+        <width>240</width>
+        <height>155</height>
+       </size>
+      </property>
+      <property name="frameShape">
+       <enum>QFrame::Box</enum>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignCenter</set>
+      </property>
+     </widget>
+    </item>
+    <item row="2" column="0">
+     <widget class="QLabel" name="label_3">
+      <property name="minimumSize">
+       <size>
+        <width>240</width>
+        <height>240</height>
+       </size>
+      </property>
+      <property name="maximumSize">
+       <size>
+        <width>240</width>
+        <height>240</height>
+       </size>
+      </property>
+      <property name="frameShape">
+       <enum>QFrame::Box</enum>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignCenter</set>
+      </property>
+     </widget>
+    </item>
+    <item row="6" column="1">
+     <widget class="QLabel" name="label_7">
+      <property name="text">
+       <string/>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignCenter</set>
+      </property>
+     </widget>
+    </item>
+    <item row="2" column="1">
+     <layout class="QVBoxLayout" name="verticalLayout_3" stretch="5,1">
+      <property name="sizeConstraint">
+       <enum>QLayout::SetDefaultConstraint</enum>
+      </property>
+      <item>
+       <layout class="QVBoxLayout" name="verticalLayout">
+        <property name="spacing">
+         <number>0</number>
+        </property>
+        <item>
+         <layout class="QHBoxLayout" name="horizontalLayout">
+          <item>
+           <spacer name="verticalSpacer_2">
+            <property name="orientation">
+             <enum>Qt::Vertical</enum>
+            </property>
+            <property name="sizeHint" stdset="0">
+             <size>
+              <width>20</width>
+              <height>40</height>
+             </size>
+            </property>
+           </spacer>
+          </item>
+          <item>
+           <layout class="QVBoxLayout" name="verticalLayout_4">
+            <item>
+             <widget class="QSpinBox" name="spinBox">
+              <property name="maximumSize">
+               <size>
+                <width>100</width>
+                <height>20</height>
+               </size>
+              </property>
+              <property name="alignment">
+               <set>Qt::AlignCenter</set>
+              </property>
+              <property name="maximum">
+               <number>239</number>
+              </property>
+              <property name="value">
+               <number>120</number>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <widget class="QSpinBox" name="spinBox_2">
+              <property name="maximumSize">
+               <size>
+                <width>100</width>
+                <height>20</height>
+               </size>
+              </property>
+              <property name="alignment">
+               <set>Qt::AlignCenter</set>
+              </property>
+              <property name="maximum">
+               <number>239</number>
+              </property>
+              <property name="value">
+               <number>120</number>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <widget class="QSpinBox" name="spinBox_3">
+              <property name="maximumSize">
+               <size>
+                <width>100</width>
+                <height>20</height>
+               </size>
+              </property>
+              <property name="alignment">
+               <set>Qt::AlignCenter</set>
+              </property>
+              <property name="maximum">
+               <number>154</number>
+              </property>
+              <property name="value">
+               <number>78</number>
+              </property>
+             </widget>
+            </item>
+           </layout>
+          </item>
+          <item>
+           <spacer name="verticalSpacer">
+            <property name="orientation">
+             <enum>Qt::Vertical</enum>
+            </property>
+            <property name="sizeHint" stdset="0">
+             <size>
+              <width>20</width>
+              <height>40</height>
+             </size>
+            </property>
+           </spacer>
+          </item>
+         </layout>
+        </item>
+       </layout>
+      </item>
+      <item>
+       <layout class="QHBoxLayout" name="horizontalLayout_3">
+        <item>
+         <widget class="QSlider" name="horizontalSlider">
+          <property name="maximum">
+           <number>100</number>
+          </property>
+          <property name="value">
+           <number>100</number>
+          </property>
+          <property name="orientation">
+           <enum>Qt::Horizontal</enum>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QSpinBox" name="spinBox_4">
+          <property name="maximum">
+           <number>100</number>
+          </property>
+          <property name="value">
+           <number>100</number>
+          </property>
+         </widget>
+        </item>
+       </layout>
+      </item>
+     </layout>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>504</width>
+     <height>21</height>
+    </rect>
+   </property>
+   <widget class="QMenu" name="menu">
+    <property name="title">
+     <string>File</string>
+    </property>
+    <addaction name="actionopen"/>
+    <addaction name="actionsave"/>
+    <addaction name="actionsaveas"/>
+    <addaction name="actionslicesave"/>
+    <addaction name="separator"/>
+    <addaction name="actioncopy_path"/>
+    <addaction name="actiondirectory"/>
+    <addaction name="separator"/>
+    <addaction name="actionback"/>
+    <addaction name="actionnext"/>
+    <addaction name="separator"/>
+    <addaction name="actiondel"/>
+    <addaction name="actionexit"/>
+   </widget>
+   <widget class="QMenu" name="menu_2">
+    <property name="title">
+     <string>View</string>
+    </property>
+    <addaction name="actionlines"/>
+    <addaction name="actionarrows"/>
+    <addaction name="actionnewwindow"/>
+    <addaction name="actionopeninnew"/>
+    <addaction name="actionsaveslinum"/>
+    <addaction name="actionrestoreslinum"/>
+    <addaction name="actionsamesp"/>
+    <addaction name="actionnextsp"/>
+    <addaction name="actionlastsp"/>
+    <addaction name="actionclearview"/>
+   </widget>
+   <widget class="QMenu" name="menu_3">
+    <property name="title">
+     <string>Process</string>
+    </property>
+    <addaction name="actionnormalize"/>
+    <addaction name="actionet2tc"/>
+    <addaction name="actiontc2wt"/>
+    <addaction name="actionwt2et"/>
+    <addaction name="actionfusion"/>
+    <addaction name="actionrmfocus"/>
+    <addaction name="actionrmregion"/>
+    <addaction name="actionrmlabel"/>
+   </widget>
+   <widget class="QMenu" name="menu_4">
+    <property name="title">
+     <string>Statics</string>
+    </property>
+    <addaction name="actionhist"/>
+   </widget>
+   <addaction name="menu"/>
+   <addaction name="menu_2"/>
+   <addaction name="menu_3"/>
+   <addaction name="menu_4"/>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+  <widget class="QToolBar" name="toolBar">
+   <property name="sizePolicy">
+    <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+     <horstretch>0</horstretch>
+     <verstretch>0</verstretch>
+    </sizepolicy>
+   </property>
+   <property name="windowTitle">
+    <string>toolBar</string>
+   </property>
+   <attribute name="toolBarArea">
+    <enum>TopToolBarArea</enum>
+   </attribute>
+   <attribute name="toolBarBreak">
+    <bool>false</bool>
+   </attribute>
+   <addaction name="actionopen"/>
+   <addaction name="actionsaveas"/>
+   <addaction name="actiondel"/>
+   <addaction name="separator"/>
+   <addaction name="actionback"/>
+   <addaction name="actionnext"/>
+   <addaction name="separator"/>
+   <addaction name="actionfusion"/>
+   <addaction name="actionet2tc"/>
+   <addaction name="separator"/>
+   <addaction name="actionsaveslinum"/>
+   <addaction name="actionrestoreslinum"/>
+  </widget>
+  <action name="actionopen">
+   <property name="icon">
+    <iconset resource="viewer.qrc">
+     <normaloff>:/icons/source/8.png</normaloff>:/icons/source/8.png</iconset>
+   </property>
+   <property name="text">
+    <string>Open</string>
+   </property>
+   <property name="toolTip">
+    <string>打开</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+O</string>
+   </property>
+  </action>
+  <action name="actionexit">
+   <property name="text">
+    <string>Stop</string>
+   </property>
+   <property name="shortcut">
+    <string>F4</string>
+   </property>
+  </action>
+  <action name="actionnext">
+   <property name="icon">
+    <iconset resource="viewer.qrc">
+     <normaloff>:/icons/source/2.png</normaloff>:/icons/source/2.png</iconset>
+   </property>
+   <property name="text">
+    <string>Next</string>
+   </property>
+   <property name="shortcut">
+    <string>Right</string>
+   </property>
+  </action>
+  <action name="actionback">
+   <property name="icon">
+    <iconset resource="viewer.qrc">
+     <normaloff>:/icons/source/1.png</normaloff>:/icons/source/1.png</iconset>
+   </property>
+   <property name="text">
+    <string>Prev</string>
+   </property>
+   <property name="shortcut">
+    <string>Left</string>
+   </property>
+  </action>
+  <action name="actionsaveas">
+   <property name="icon">
+    <iconset resource="viewer.qrc">
+     <normaloff>:/icons/source/6.png</normaloff>:/icons/source/6.png</iconset>
+   </property>
+   <property name="text">
+    <string>Save_another_name</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+Shift+S</string>
+   </property>
+  </action>
+  <action name="actiondel">
+   <property name="icon">
+    <iconset resource="viewer.qrc">
+     <normaloff>:/icons/source/13.png</normaloff>:/icons/source/13.png</iconset>
+   </property>
+   <property name="text">
+    <string>Delete</string>
+   </property>
+   <property name="shortcut">
+    <string>Del</string>
+   </property>
+  </action>
+  <action name="actionfusion">
+   <property name="icon">
+    <iconset resource="viewer.qrc">
+     <normaloff>:/icons/source/14.png</normaloff>:/icons/source/14.png</iconset>
+   </property>
+   <property name="text">
+    <string>Fusion
+</string>
+   </property>
+   <property name="toolTip">
+    <string>Fusion of label map (multi-modal map) into multi-modal (label map) map</string>
+   </property>
+  </action>
+  <action name="actionet2tc">
+   <property name="icon">
+    <iconset resource="viewer.qrc">
+     <normaloff>:/icons/source/et.png</normaloff>:/icons/source/et.png</iconset>
+   </property>
+   <property name="text">
+    <string>ET2TC</string>
+   </property>
+   <property name="toolTip">
+    <string>Convert ET area to TC area</string>
+   </property>
+  </action>
+  <action name="actionsave">
+   <property name="text">
+    <string>Save</string>
+   </property>
+  </action>
+  <action name="actionnormalize">
+   <property name="text">
+    <string>Standardization
+</string>
+   </property>
+  </action>
+  <action name="actionlines">
+   <property name="text">
+    <string>Indicator line
+</string>
+   </property>
+  </action>
+  <action name="actionnewwindow">
+   <property name="text">
+    <string>New Window</string>
+   </property>
+  </action>
+  <action name="actionwt2et">
+   <property name="text">
+    <string>WT2ET</string>
+   </property>
+   <property name="toolTip">
+    <string>Transfer WT area to ET area</string>
+   </property>
+  </action>
+  <action name="actiontc2wt">
+   <property name="text">
+    <string>TC2WT</string>
+   </property>
+   <property name="toolTip">
+    <string>Convert TC area to WT area</string>
+   </property>
+  </action>
+  <action name="actiondirectory">
+   <property name="text">
+    <string>Folder</string>
+   </property>
+  </action>
+  <action name="actionopeninnew">
+   <property name="text">
+    <string>Open in a new window</string>
+   </property>
+  </action>
+  <action name="actionsaveslinum">
+   <property name="text">
+    <string>Save view
+</string>
+   </property>
+   <property name="toolTip">
+    <string>Save current view information (slice number, file name）</string>
+   </property>
+  </action>
+  <action name="actionrestoreslinum">
+   <property name="text">
+    <string>Synchronize
+Index</string>
+   </property>
+   <property name="toolTip">
+    <string>Synchronize to the slice number in the view information</string>
+   </property>
+  </action>
+  <action name="actionrmregion">
+   <property name="text">
+    <string>Clear area (selected)
+</string>
+   </property>
+   <property name="toolTip">
+    <string>Clear the area selected with the mouse</string>
+   </property>
+  </action>
+  <action name="actionrmlabel">
+   <property name="text">
+    <string>Clear label (optional)</string>
+   </property>
+   <property name="toolTip">
+    <string>清除用鼠标选择的标签</string>
+   </property>
+  </action>
+  <action name="actionrmfocus">
+   <property name="text">
+    <string>Clear area (line)</string>
+   </property>
+   <property name="toolTip">
+    <string>Clear the label selected with the mouse</string>
+   </property>
+  </action>
+  <action name="actionnextsp">
+   <property name="text">
+    <string>Next sample
+</string>
+   </property>
+   <property name="toolTip">
+    <string>If the current file is saved in the sample folder, jump to the same mode of the next sample</string>
+   </property>
+  </action>
+  <action name="actionlastsp">
+   <property name="text">
+    <string>Prev sample
+</string>
+   </property>
+   <property name="toolTip">
+    <string>If the current file is saved in the sample folder, jump to the same mode of the previous sample</string>
+   </property>
+  </action>
+  <action name="actionsamesp">
+   <property name="text">
+    <string>Synchronize Sample</string>
+   </property>
+   <property name="toolTip">
+    <string>Find the sample with the same name in the saved view information in the current folder</string>
+   </property>
+  </action>
+  <action name="actionslicesave">
+   <property name="text">
+    <string>Save_Slice</string>
+   </property>
+   <property name="toolTip">
+    <string>Save the slice images of the current interface in three directions to the desktop</string>
+   </property>
+   <property name="whatsThis">
+    <string/>
+   </property>
+  </action>
+  <action name="actionhist">
+   <property name="text">
+    <string>Histogram
+</string>
+   </property>
+  </action>
+  <action name="actioncopy_path">
+   <property name="text">
+    <string>Copy_Path</string>
+   </property>
+  </action>
+  <action name="actionarrows">
+   <property name="text">
+    <string>Direction arrow</string>
+   </property>
+  </action>
+  <action name="actionclearview">
+   <property name="text">
+    <string>Clear window
+</string>
+   </property>
+   <property name="toolTip">
+    <string>Clear open file information and view information</string>
+   </property>
+  </action>
+ </widget>
+ <resources>
+  <include location="viewer.qrc"/>
+ </resources>
+ <connections>
+  <connection>
+   <sender>actionopen</sender>
+   <signal>triggered()</signal>
+   <receiver>MainWindow</receiver>
+   <slot>file_open()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>-1</x>
+     <y>-1</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>364</x>
+     <y>228</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>actionback</sender>
+   <signal>triggered()</signal>
+   <receiver>MainWindow</receiver>
+   <slot>back()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>-1</x>
+     <y>-1</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>364</x>
+     <y>228</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>actionnext</sender>
+   <signal>triggered()</signal>
+   <receiver>MainWindow</receiver>
+   <slot>next()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>-1</x>
+     <y>-1</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>364</x>
+     <y>228</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>actionexit</sender>
+   <signal>triggered()</signal>
+   <receiver>MainWindow</receiver>
+   <slot>close()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>-1</x>
+     <y>-1</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>364</x>
+     <y>228</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>spinBox</sender>
+   <signal>valueChanged(int)</signal>
+   <receiver>MainWindow</receiver>
+   <slot>nii_show()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>410</x>
+     <y>296</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>591</x>
+     <y>302</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>spinBox_2</sender>
+   <signal>valueChanged(int)</signal>
+   <receiver>MainWindow</receiver>
+   <slot>nii_show()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>410</x>
+     <y>350</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>592</x>
+     <y>365</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>spinBox_3</sender>
+   <signal>valueChanged(int)</signal>
+   <receiver>MainWindow</receiver>
+   <slot>nii_show()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>410</x>
+     <y>404</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>596</x>
+     <y>434</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>horizontalSlider</sender>
+   <signal>valueChanged(int)</signal>
+   <receiver>spinBox_4</receiver>
+   <slot>setValue(int)</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>351</x>
+     <y>472</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>492</x>
+     <y>473</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>spinBox_4</sender>
+   <signal>valueChanged(int)</signal>
+   <receiver>horizontalSlider</receiver>
+   <slot>setValue(int)</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>492</x>
+     <y>473</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>348</x>
+     <y>472</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>spinBox_4</sender>
+   <signal>valueChanged(int)</signal>
+   <receiver>MainWindow</receiver>
+   <slot>nii_show()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>469</x>
+     <y>463</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>251</x>
+     <y>267</y>
+    </hint>
+   </hints>
+  </connection>
+ </connections>
+ <slots>
+  <slot>file_open()</slot>
+  <slot>next()</slot>
+  <slot>back()</slot>
+  <slot>nii_show()</slot>
+ </slots>
+</ui>
